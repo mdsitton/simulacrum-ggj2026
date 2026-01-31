@@ -22,6 +22,8 @@ public class PlayerInputControls : MonoBehaviour
 
     private void Update()
     {
+        if (CurrentPlayerAnimator == null) return;
+
         // Look = actions.Player.MouseClick.ReadValue<bool>() ? actions.Player.MouseMove.ReadValue<Vector2>() : Look; // Update Look only on mouse click keep last value otherwise
         previousMove = Move;
         var move = actions.Player.Move.ReadValue<Vector2>();
