@@ -1,0 +1,35 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "Tiles/isometric-sandbox-32x32/isometric-sandbox-map.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 2262,
+                "y": 933.3333333333331
+            }
+        },
+        "Tiles/test-map.tmx": {
+            "scale": 3,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 408.33333333333337,
+                "y": 256.5
+            }
+        }
+    },
+    "map.lastUsedFormat": "tmx",
+    "map.orientation": "2",
+    "openFiles": [
+    ],
+    "project": "simulacrum-tiles.tiled-project",
+    "recentFiles": [
+    ]
+}
