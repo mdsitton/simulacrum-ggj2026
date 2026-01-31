@@ -12,24 +12,16 @@
             "scale": 0.75,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 1860,
-                "y": 794.6666666666667
-            }
-        },
-        "Tiles/test-door-map.tmx": {
-            "scale": 2,
-            "selectedLayer": 1,
-            "viewCenter": {
-                "x": 355.5,
-                "y": 251.5
+                "x": 1718.6666666666665,
+                "y": 532.6666666666666
             }
         },
         "Tiles/test-map.tmx": {
-            "scale": 1.5,
+            "scale": 4,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 424.66666666666663,
-                "y": 271.99999999999994
+                "x": 348.5,
+                "y": 169.125
             }
         }
     },
