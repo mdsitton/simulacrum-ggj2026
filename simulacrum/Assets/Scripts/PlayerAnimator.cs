@@ -34,6 +34,11 @@ public class PlayerAnimator : MonoBehaviour
 
     private Rigidbody2D playerBody;
 
+    public Transform GetLocation()
+    {
+        return playerBody.transform;
+    }
+
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();

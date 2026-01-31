@@ -63,5 +63,21 @@ public class PlayerInputControls : MonoBehaviour
 
         // Apply velocity every frame, separate from facing direction
         CurrentPlayerAnimator.SetVelocity(Move);
+
+        
+
+        if(actions.Player.Interact.ReadValue<float>() > 0)
+        {
+            Collider2D[] hitColliders = Physics2D.OverlapCircleAll(CurrentPlayerAnimator.GetLocation().position, (float)0.5);
+
+            foreach (Collider2D other in hitColliders)
+            {
+                Door door = other.GetComponent<Door>();
+                if (door != null)
+                {
+                    door.Open();
+                }
+            }
+        }
     }
 }
