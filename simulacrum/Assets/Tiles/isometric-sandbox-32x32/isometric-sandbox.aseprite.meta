@@ -129,7 +129,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: isometric-sandbox
     originalName: 
-    pivot: {x: 1.2903225, y: -0.11111112}
+    pivot: {x: 1.1111112, y: -0.11111112}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -137,7 +137,7 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 248
+      width: 288
       height: 288
     spriteID: 81b70d3633bfeb746b1ad8f0f10d870e
     spriteBone: []
@@ -169,7 +169,7 @@ ScriptedImporter:
       cellRect:
         x: 0
         y: 32
-        width: 248
+        width: 288
         height: 288
       spriteId: 81b70d3633bfeb746b1ad8f0f10d870e
     linkedCells: []
@@ -182,4 +182,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 640, y: 320}
-  previousTextureSize: {x: 256, y: 512}
+  previousTextureSize: {x: 512, y: 512}
