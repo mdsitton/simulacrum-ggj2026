@@ -259,6 +259,8 @@ public class PlayerInputControls : MonoBehaviour
             }
         }
 
+        TransferTarget.transform.position = CurrentPlayerAnimator.GetTransferTarget().position;
+
         // Apply velocity using the locked 8-way cardinal direction
         // Use the locked direction instead of recalculating every frame
         if (Move != Vector2.zero && hasLockedDirection)
@@ -299,7 +301,6 @@ public class PlayerInputControls : MonoBehaviour
                 CurrentPlayerAnimator.SetState(CharacterState.Standing);
 
                 Transfer.transform.position = CurrentPlayerAnimator.GetTransferTarget().position;
-                TransferTarget.transform.position = target.GetTransferTarget().position;
 
                 Transfer.Play();
 
