@@ -10,10 +10,14 @@ public enum CharacterState
 
 public enum CharacterDirection
 {
-    Front,
-    Back,
-    Left,
-    Right
+    Angle45,   // Northeast
+    Angle90,   // East
+    Angle135,  // Southeast
+    Angle180,  // South
+    Angle225,  // Southwest
+    Angle270,  // West
+    Angle315,  // Northwest
+    Angle360   // North (same as 0 degrees)
 }
 
 public class PlayerAnimator : MonoBehaviour
@@ -24,6 +28,7 @@ public class PlayerAnimator : MonoBehaviour
     private CharacterDirection direction;
 
     private bool stateResetNeeded = false;
+    private bool directionResetNeeded = false;
 
     private SpriteRenderer spriteRenderer;
 
@@ -65,7 +70,7 @@ public class PlayerAnimator : MonoBehaviour
         if (direction == newDirection) return;
 
         direction = newDirection;
-        stateResetNeeded = true;
+        directionResetNeeded = true;
         UpdateSprite();
     }
 
@@ -73,7 +78,25 @@ public class PlayerAnimator : MonoBehaviour
     {
         if (state == CharacterState.Walking)
         {
-            playerBody.linearVelocity = moveVector * 2f; // Example speed
+            // Check if moving diagonally (both X and Y have input)
+            bool isDiagonal = Mathf.Abs(moveVector.x) > 0.1f && Mathf.Abs(moveVector.y) > 0.1f;
+
+            Vector2 velocity;
+            if (isDiagonal)
+            {
+                // Diagonal movement follows isometric grid (2:1 ratio = 26.57° angle)
+                // Horizontal component is 2x the vertical component
+                float signX = Mathf.Sign(moveVector.x);
+                float signY = Mathf.Sign(moveVector.y);
+                velocity = new Vector2(signX * 2f, signY * 1f).normalized;
+            }
+            else
+            {
+                // Cardinal directions move straight up/down/left/right
+                velocity = moveVector.normalized;
+            }
+
+            playerBody.linearVelocity = velocity * 1.5f;
         }
     }
 
@@ -82,13 +105,20 @@ public class PlayerAnimator : MonoBehaviour
 
     private void UpdateSprite()
     {
-        (Sprite sprite, var newFrameCount) = spriteSet.GetSprite(state, direction, frameIndex);
+        (Sprite sprite, var newFrameCount, var newFrameTime) = spriteSet.GetSprite(state, direction, frameIndex);
+
+        if (sprite == null) return;
         frameCount = newFrameCount;
+        frameTime = newFrameTime;
         if (stateResetNeeded)
         {
             frameIndex = 0;
             stateResetNeeded = false;
-            Debug.Log("State reset");
+        }
+        // Direction changes don't reset frame index - allows smooth animation transitions
+        if (directionResetNeeded)
+        {
+            directionResetNeeded = false;
         }
         spriteRenderer.sprite = sprite;
     }
