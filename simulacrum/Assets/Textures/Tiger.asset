@@ -276,7 +276,7 @@ MonoBehaviour:
   - {fileID: 584844051, guid: 463a750bbfb52014b8aef8199ba9a608, type: 3}
   - {fileID: 253205290, guid: 463a750bbfb52014b8aef8199ba9a608, type: 3}
   - {fileID: 829469352, guid: 463a750bbfb52014b8aef8199ba9a608, type: 3}
-  idleAnimationTime: 2
+  idleAnimationTime: 1.5
   sittingSprites:
   - {fileID: 0}
   - {fileID: 0}
@@ -815,4 +815,4 @@ MonoBehaviour:
   - {fileID: -1969386423, guid: 9d70a9647528f0848822093aadc7e3f3, type: 3}
   - {fileID: 710558473, guid: 9d70a9647528f0848822093aadc7e3f3, type: 3}
   - {fileID: 1349364465, guid: 9d70a9647528f0848822093aadc7e3f3, type: 3}
-  walkingAnimationTime: 2
+  walkingAnimationTime: 0.8

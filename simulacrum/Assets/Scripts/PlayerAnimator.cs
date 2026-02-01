@@ -36,6 +36,30 @@ public class PlayerAnimator : MonoBehaviour
     private CharacterState state;
     private CharacterDirection direction;
 
+    /// <summary>
+    /// The controller currently controlling this animator (player input or waypoint AI).
+    /// </summary>
+    private ICharacterController activeController;
+
+    /// <summary>
+    /// Gets the currently active controller, or null if no controller is active.
+    /// </summary>
+    public ICharacterController ActiveController => activeController;
+
+    /// <summary>
+    /// Sets the active controller for this animator.
+    /// Deactivates the previous controller if one exists.
+    /// </summary>
+    /// <param name="controller">The new controller to activate, or null to clear</param>
+    public void SetActiveController(ICharacterController controller)
+    {
+        if (activeController != null && activeController != controller)
+        {
+            activeController.Deactivate();
+        }
+        activeController = controller;
+    }
+
     private bool stateResetNeeded = false;
     private bool directionResetNeeded = false;
 
