@@ -1,0 +1,181 @@
+fileFormatVersion: 2
+guid: 583bc05dc39b2504bbb38f4f5d81ac9d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 1
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 1
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1b0d147242e8bc74d95526785e58f0da
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      casual_Male_K_00: -564100828
+      casual_Male_K_01: -1008645598
+      casual_Male_K_02: -41343542
+      casual_Male_K_03: -590196600
+      casual_Male_K_04: -795614457
+      casual_Male_K_05: 1511853993
+      casual_Male_K_06: -334034404
+      casual_Male_K_07: -1317764706
+      casual_Male_K_08: 1228263544
+      casual_Male_K_09: 966376346
+      casual_Male_K_10: 1664552109
+      casual_Male_K_11: -1027551108
+      casual_Male_K_12: -1213907542
+      casual_Male_K_13: -1204030947
+      casual_Male_K_14: -1510881293
+      casual_Male_K_15: 1916232233
+      casual_Male_K_16: 1894104629
+      casual_Male_K_17: 357219689
+      casual_Male_K_18: -1214558900
+      casual_Male_K_19: -1856500974
+      casual_Male_K_20: -1233338255
+      casual_Male_K_21: -1245275625
+      casual_Male_K_22: 1842638137
+      casual_Male_K_23: -1574551592
+      casual_Male_K_24: -1168464624
+      casual_Male_K_25: 1819635193
+      casual_Male_K_26: 1848280375
+      casual_Male_K_27: 296385737
+      casual_Male_K_28: -1559526325
+      casual_Male_K_29: -1573718141
+      casual_Male_K_30: 473602354
+      casual_Male_K_31: -1468089275
+      casual_Male_K_32: 49415357
+      casual_Male_K_33: 95957026
+      casual_Male_K_34: 1408411427
+      casual_Male_K_35: 1453187716
+      casual_Male_K_36: 1340618090
+      casual_Male_K_37: -1155463837
+      casual_Male_K_38: 1504092273
+      casual_Male_K_39: 424541925
+      casual_Male_K_40: 1469994436
+      casual_Male_K_41: 369973906
+      casual_Male_K_42: 487126381
+      casual_Male_K_43: -1973727932
+      casual_Male_K_44: 210200844
+      casual_Male_K_45: 1427792618
+      casual_Male_K_46: -1836462498
+      casual_Male_K_47: -960916890
+      casual_Male_K_48: 667274963
+      casual_Male_K_49: -2103163303
+      casual_Male_K_50: -1046144470
+      casual_Male_K_51: 1794572479
+      casual_Male_K_52: -1996441165
+      casual_Male_K_53: -659393494
+      casual_Male_K_54: -1338371955
+      casual_Male_K_55: 640857220
+      casual_Male_K_56: -1181925857
+      casual_Male_K_57: 422719413
+      casual_Male_K_58: -1746975812
+      casual_Male_K_59: -1824039086
+      casual_Male_K_60: 984193826
+      casual_Male_K_61: 908199207
+      casual_Male_K_62: 815867026
+      casual_Male_K_63: -947541781
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

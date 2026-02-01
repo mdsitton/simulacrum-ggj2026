@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbb6a3c96c877fc4eb3f34c2a2f7ea58, type: 3}
-  m_Name: Standard
+  m_Name: BlueGuy
   m_EditorClassIdentifier: Assembly-CSharp::SpriteSet
   idle45:
   - {fileID: -1237738691, guid: 619be0052d368544db794fd0f0aa535a, type: 3}
@@ -805,6 +805,7 @@ MonoBehaviour:
   - {fileID: -131880764, guid: 37c42cea7ca81634ebb61eaa2ea45a76, type: 3}
   - {fileID: 972407327, guid: 37c42cea7ca81634ebb61eaa2ea45a76, type: 3}
   - {fileID: -2134206785, guid: 37c42cea7ca81634ebb61eaa2ea45a76, type: 3}
+  - {fileID: 1198356952, guid: 37c42cea7ca81634ebb61eaa2ea45a76, type: 3}
   dieAnimationTime: 2
   walking45:
   - {fileID: 1167008477, guid: 1756c0bd30e5b80469a3e08939c6ee9b, type: 3}
