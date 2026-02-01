@@ -165,22 +165,29 @@ public class PlayerAnimator : MonoBehaviour
 
     private void UpdateSprite()
     {
-        (Sprite sprite, var newFrameCount, var newFrameTime) = spriteSet.GetSprite(state, direction, frameIndex);
+        try
+        {
+            (Sprite sprite, var newFrameCount, var newFrameTime) = spriteSet.GetSprite(state, direction, frameIndex);
 
-        if (sprite == null) return;
-        frameCount = newFrameCount;
-        frameTime = newFrameTime;
-        if (stateResetNeeded)
-        {
-            frameIndex = 0;
-            stateResetNeeded = false;
+            if (sprite == null) return;
+            frameCount = newFrameCount;
+            frameTime = newFrameTime;
+            if (stateResetNeeded)
+            {
+                frameIndex = 0;
+                stateResetNeeded = false;
+            }
+            // Direction changes don't reset frame index - allows smooth animation transitions
+            if (directionResetNeeded)
+            {
+                directionResetNeeded = false;
+            }
+            spriteRenderer.sprite = sprite;
         }
-        // Direction changes don't reset frame index - allows smooth animation transitions
-        if (directionResetNeeded)
+        catch (System.Exception e)
         {
-            directionResetNeeded = false;
+            return;
         }
-        spriteRenderer.sprite = sprite;
     }
 
     private bool isDead = false;
@@ -192,6 +199,8 @@ public class PlayerAnimator : MonoBehaviour
         {
             animationTimer = 0f;
             // Death animation plays once and stays on last frame
+
+            if (frameCount == 0) return; // No frames to animate
             if (state == CharacterState.Die)
             {
                 if (!isDead && frameIndex < frameCount - 1)
@@ -216,5 +225,5 @@ public class PlayerAnimator : MonoBehaviour
     {
         return !isDead;
     }
-   
+
 }

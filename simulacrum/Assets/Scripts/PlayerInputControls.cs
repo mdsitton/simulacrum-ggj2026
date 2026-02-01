@@ -3,6 +3,7 @@ using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
+using UnityEngine.SceneManagement;
 using UnityEngine.VFX;
 using static InputSystem_Actions;
 
@@ -196,6 +197,16 @@ public class PlayerInputControls : MonoBehaviour, ICharacterController
 
     private void Update()
     {
+        if (isGameFinished && finishTimer > 0.0f)
+        {
+            finishTimer -= Time.deltaTime;
+            if (finishTimer <= 0.0f)
+            {
+                SceneManager.LoadScene("MainMenu");
+            }
+            return;
+        }
+
         if (!isActive || CurrentPlayerAnimator == null) return;
 
         previousMove = Move;
@@ -447,6 +458,12 @@ public class PlayerInputControls : MonoBehaviour, ICharacterController
         }
     }
 
+    [SerializeField]
+    private GameObject winscreen;
+
+    private float finishTimer = 0.0f;
+    private bool isGameFinished = false;
+
     void TryTransfer()
     {
 
@@ -471,10 +488,14 @@ public class PlayerInputControls : MonoBehaviour, ICharacterController
             if (target.GetComponent<ShipController>() != null)
             {
                 target.GetComponent<ShipController>().takeOff = true;
-            }  
-             
+                winscreen.SetActive(true);
+                finishTimer = 15.0f;
+                isGameFinished = true;
+
+            }
+
             // Use the interface to properly switch control
-            Activate(target);   
+            Activate(target);
         }
     }
 }
