@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/test-scene.unity
     guid: c6dc45c10a77104498589becd63dcf3c
   - enabled: 1
+    path: Assets/Scenes/level-scene.unity
+    guid: 2251c4e2b70a61043b3ef2bab79518d9
+  - enabled: 1
     path: Assets/Scenes/test-transfer-scene.unity
     guid: d82b2fde8f497fc48bacfa472a273231
   m_configObjects:
