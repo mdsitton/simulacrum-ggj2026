@@ -16,11 +16,13 @@ public class PlayerInputControls : MonoBehaviour
 
     public Vector2 Move { get; private set; }
     private Vector2 previousMove;
+    private Camera mainCamera;
 
     private InputSystem_Actions actions;
 
     public void Awake()
     {
+        mainCamera = Camera.main;
         actions = new InputSystem_Actions();
         actions.Player.Enable();
     }
@@ -88,6 +90,16 @@ public class PlayerInputControls : MonoBehaviour
 
         previousMove = Move;
         var move = actions.Player.Move.ReadValue<Vector2>();
+        float mouseClick = actions.Player.MouseClick.ReadValue<float>();
+
+        if (mouseClick > 0)
+        {
+            Vector2 playerPos = mainCamera.WorldToScreenPoint(CurrentPlayerAnimator.GetLocation().position);
+            var mousePos = actions.Player.MouseMove.ReadValue<Vector2>();
+
+            var direction = (mousePos - playerPos).normalized;
+            move = direction;
+        }
 
         // Only process when movement changes
         if (move != previousMove)
@@ -113,7 +125,7 @@ public class PlayerInputControls : MonoBehaviour
 
         if (actions.Player.Interact.WasPressedThisFrame())
         {
-           Interact();
+            Interact();
         }
     }
 
@@ -121,24 +133,24 @@ public class PlayerInputControls : MonoBehaviour
     {
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(CurrentPlayerAnimator.GetLocation().position, (float)0.5);
         foreach (Collider2D other in hitColliders)
-        {                
+        {
             Door door = other.GetComponent<Door>();
             if (door != null)
             {
                 door.Open();
                 return;
-            }                
+            }
         }
 
-        hitColliders = Physics2D.OverlapCircleAll(CurrentPlayerAnimator.GetLocation().position, (float)3);        
+        hitColliders = Physics2D.OverlapCircleAll(CurrentPlayerAnimator.GetLocation().position, (float)3);
         foreach (Collider2D other in hitColliders)
         {
             PlayerAnimator target = other.GetComponent<PlayerAnimator>();
             if (target != null && target != CurrentPlayerAnimator)
             {
                 UnityEngine.Debug.Log("Switch");
-                CurrentPlayerAnimator.SetState(CharacterState.Standing);  
-                
+                CurrentPlayerAnimator.SetState(CharacterState.Standing);
+
                 Transfer.transform.position = CurrentPlayerAnimator.GetTransferTarget().position;
                 TransferTarget.transform.position = target.GetTransferTarget().position;
 
@@ -147,7 +159,7 @@ public class PlayerInputControls : MonoBehaviour
                 CurrentPlayerAnimator = target;
                 Move = Vector2.zero;
                 return;
-            }              
+            }
         }
     }
 }
