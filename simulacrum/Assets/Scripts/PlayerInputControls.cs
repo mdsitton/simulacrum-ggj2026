@@ -301,6 +301,7 @@ public class PlayerInputControls : MonoBehaviour
                 CurrentPlayerAnimator.SetState(CharacterState.Standing);
 
                 Transfer.transform.position = CurrentPlayerAnimator.GetTransferTarget().position;
+                //TransferTarget posiition updated in update loop
 
                 Transfer.Play();
 
