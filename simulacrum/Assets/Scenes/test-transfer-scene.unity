@@ -195,7 +195,7 @@ VisualEffect:
   m_GameObject: {fileID: 98544210}
   m_Enabled: 1
   m_Asset: {fileID: 8926484042661614526, guid: 85652d1e59604114594853ac32f8c435, type: 3}
-  m_InitialEventName: OnPlay
+  m_InitialEventName: 
   m_InitialEventNameOverriden: 0
   m_StartSeed: 0
   m_ResetSeedOnPlay: 1
@@ -684,6 +684,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7fc4e725a1ab1c43af6f698af3d24fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInputControls
+  cameraOffset: {x: 0, y: 0, z: 0}
+  cameraFollowTime: 0.2
   CurrentPlayerAnimator: {fileID: 1993547742}
   Transfer: {fileID: 98544212}
   TransferTarget: {fileID: 616365444}

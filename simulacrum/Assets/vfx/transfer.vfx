@@ -16,10 +16,10 @@ MonoBehaviour:
   - title: Heads & Trails
     position:
       serializedVersion: 2
-      x: 24
-      y: -1110
-      width: 2641
-      height: 3537
+      x: 129
+      y: -1277
+      width: 2536
+      height: 3704
     contents:
     - model: {fileID: 8926484042661616970}
       id: 0
@@ -99,7 +99,10 @@ MonoBehaviour:
     - model: {fileID: 8926484042661617522}
       id: 2
       isStickyNote: 0
-    - model: {fileID: 0}
+    - model: {fileID: 8926484042661618179}
+      id: 0
+      isStickyNote: 0
+    - model: {fileID: 8926484042661618184}
       id: 0
       isStickyNote: 0
   stickyNoteInfos: []
@@ -107,9 +110,9 @@ MonoBehaviour:
   uiBounds:
     serializedVersion: 2
     x: 129
-    y: -1110
+    y: -1277
     width: 2536
-    height: 3537
+    height: 3704
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -149,6 +152,8 @@ MonoBehaviour:
   - {fileID: 8926484042661617805}
   - {fileID: 8926484042661617821}
   - {fileID: 8926484042661617830}
+  - {fileID: 8926484042661618179}
+  - {fileID: 8926484042661618184}
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
   m_UISuperCollapsed: 0
@@ -203,6 +208,22 @@ MonoBehaviour:
     max: Infinity
     enumValues: []
     descendantCount: 0
+  - name: count
+    path: count
+    tooltip: 
+    space: -1
+    spaceable: 0
+    sheetType: m_Int
+    realType: Int32
+    defaultValue:
+      m_Type:
+        m_SerializableType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      m_SerializableObject: 20
+    min: -Infinity
+    max: Infinity
+    enumValues: []
+    descendantCount: 0
   m_ImportDependencies: []
   m_GraphVersion: 19
   m_ResourceVersion: 1
@@ -253,7 +274,9 @@ MonoBehaviour:
   m_Label: 
   m_Data: {fileID: 8926484042661616971}
   m_InputFlowSlot:
-  - link: []
+  - link:
+    - context: {fileID: 8926484042661618179}
+      slotIndex: 0
   - link: []
   m_OutputFlowSlot:
   - link:
@@ -332,7 +355,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 10
+      m_SerializableObject: 100
     m_Space: -1
   m_Property:
     name: Rate
@@ -436,7 +459,7 @@ MonoBehaviour:
   - {fileID: 8926484042661617009}
   - {fileID: 8926484042661617113}
   dataType: 0
-  capacity: 16
+  capacity: 100
   stripCapacity: 16
   particlePerStripCount: 16
   needsComputeBounds: 0
@@ -630,8 +653,8 @@ MonoBehaviour:
   - {fileID: 8926484042661617061}
   - {fileID: 8926484042661617084}
   dataType: 1
-  capacity: 1600
-  stripCapacity: 16
+  capacity: 10000
+  stripCapacity: 100
   particlePerStripCount: 100
   needsComputeBounds: 0
   boundsMode: 0
@@ -5815,7 +5838,8 @@ MonoBehaviour:
       m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
   m_Direction: 0
-  m_LinkedSlots: []
+  m_LinkedSlots:
+  - {fileID: 8926484042661618185}
 --- !u!114 &8926484042661617753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8832,3 +8856,134 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
   m_Direction: 0
   m_LinkedSlots: []
+--- !u!114 &8926484042661618179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2461f61b3c026d54db1951a4e17ab20e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.VisualEffectGraph.Editor::UnityEditor.VFX.VFXBasicEvent
+  m_UIIgnoredErrors: []
+  m_Parent: {fileID: 114350483966674976}
+  m_Children: []
+  m_UIPosition: {x: 1189, y: -1218}
+  m_UICollapsed: 0
+  m_UISuperCollapsed: 0
+  m_InputSlots: []
+  m_OutputSlots: []
+  m_Label: 
+  m_Data: {fileID: 8926484042661618180}
+  m_InputFlowSlot:
+  - link: []
+  m_OutputFlowSlot:
+  - link:
+    - context: {fileID: 8926484042661616970}
+      slotIndex: 0
+  eventName: OnPlay
+--- !u!114 &8926484042661618180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f68759077adc0b143b6e1c101e82065e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.VisualEffectGraph.Editor::UnityEditor.VFX.VFXDataSpawner
+  m_UIIgnoredErrors: []
+  m_Parent: {fileID: 0}
+  m_Children: []
+  m_UIPosition: {x: 0, y: 0}
+  m_UICollapsed: 1
+  m_UISuperCollapsed: 0
+  title: 
+  m_Owners:
+  - {fileID: 8926484042661618179}
+--- !u!114 &8926484042661618184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330e0fca1717dde4aaa144f48232aa64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.VisualEffectGraph.Editor::UnityEditor.VFX.VFXParameter
+  m_UIIgnoredErrors: []
+  m_Parent: {fileID: 114350483966674976}
+  m_Children: []
+  m_UIPosition: {x: 0, y: 0}
+  m_UICollapsed: 0
+  m_UISuperCollapsed: 0
+  m_InputSlots: []
+  m_OutputSlots:
+  - {fileID: 8926484042661618185}
+  m_ExposedName: count
+  m_Exposed: 1
+  m_Order: 3
+  m_Category: 
+  m_Min:
+    m_Type:
+      m_SerializableType: 
+    m_SerializableObject: 
+  m_Max:
+    m_Type:
+      m_SerializableType: 
+    m_SerializableObject: 
+  m_IsOutput: 0
+  m_EnumValues: []
+  m_ValueFilter: 0
+  m_Tooltip: 
+  m_Nodes:
+  - m_Id: 0
+    linkedSlots:
+    - outputSlot: {fileID: 8926484042661618185}
+      inputSlot: {fileID: 8926484042661617752}
+    position: {x: 1363, y: -833}
+    expandedSlots: []
+    expanded: 1
+    supecollapsed: 0
+--- !u!114 &8926484042661618185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d246e354feb93041a837a9ef59437cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.VisualEffectGraph.Editor::UnityEditor.VFX.VFXSlotInt
+  m_UIIgnoredErrors: []
+  m_Parent: {fileID: 0}
+  m_Children: []
+  m_UIPosition: {x: 0, y: 0}
+  m_UICollapsed: 1
+  m_UISuperCollapsed: 0
+  m_MasterSlot: {fileID: 8926484042661618185}
+  m_MasterData:
+    m_Owner: {fileID: 8926484042661618184}
+    m_Value:
+      m_Type:
+        m_SerializableType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      m_SerializableObject: 20
+    m_Space: -1
+  m_Property:
+    name: o
+    m_serializedType:
+      m_SerializableType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+  m_Direction: 1
+  m_LinkedSlots:
+  - {fileID: 8926484042661617752}
