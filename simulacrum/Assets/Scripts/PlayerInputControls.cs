@@ -468,8 +468,13 @@ public class PlayerInputControls : MonoBehaviour, ICharacterController
                 spinSelector.gameObject.SetActive(false);
             }
 
+            if (target.GetComponent<ShipController>() != null)
+            {
+                target.GetComponent<ShipController>().takeOff = true;
+            }  
+             
             // Use the interface to properly switch control
-            Activate(target);
+            Activate(target);   
         }
     }
 }
