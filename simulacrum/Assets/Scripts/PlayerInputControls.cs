@@ -8,6 +8,9 @@ using static InputSystem_Actions;
 
 public class PlayerInputControls : MonoBehaviour
 {
+    public Vector3 cameraOffset = new Vector3();
+    public float cameraFollowTime = 0.2f; 
+
     public PlayerAnimator CurrentPlayerAnimator;
     public VisualEffect Transfer;
 
@@ -18,6 +21,7 @@ public class PlayerInputControls : MonoBehaviour
     public Vector2 Move { get; private set; }
     private Vector2 previousMove;
     private Camera mainCamera;
+    private Vector3 cameraVelocity;
 
     private InputSystem_Actions actions;
 
@@ -257,6 +261,18 @@ public class PlayerInputControls : MonoBehaviour
                 // Clear mouse destination when stopping
                 mouseClickDestination = null;
             }
+        }
+
+        if (mainCamera != null)
+        {            
+            Vector3 desiredPosition = CurrentPlayerAnimator.GetLocation().position + cameraOffset;
+            desiredPosition.z = mainCamera.transform.position.z;
+            UnityEngine.Debug.Log("Desired Position " + desiredPosition);
+            var lerp = Vector3.SmoothDamp(mainCamera.transform.position, desiredPosition, ref cameraVelocity, cameraFollowTime);
+            UnityEngine.Debug.Log("Lerp " + lerp);
+            mainCamera.transform.position  = lerp;
+            UnityEngine.Debug.Log("Camera Position " + mainCamera.transform.position);
+
         }
 
         TransferTarget.transform.position = CurrentPlayerAnimator.GetTransferTarget().position;
