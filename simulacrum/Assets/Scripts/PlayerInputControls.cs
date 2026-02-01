@@ -292,6 +292,11 @@ public class PlayerInputControls : MonoBehaviour
         {
             Interact();
         }
+
+        if (actions.Player.Jump.WasPressedThisFrame())
+        {
+            CurrentPlayerAnimator.SetState(CharacterState.Die);
+        }
     }
 
     void Interact()

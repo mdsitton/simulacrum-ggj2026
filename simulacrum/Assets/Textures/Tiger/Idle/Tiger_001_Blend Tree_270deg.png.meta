@@ -1,0 +1,855 @@
+fileFormatVersion: 2
+guid: 949b31c0ea858484580c7a0502b57a69
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tiger_001_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 144
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5069444, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45cc7865ab22bb4fab72b1e7ec802c2
+      internalID: 1799623555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_01
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 143
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5104895, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d3aab867c5849a42a61e4e5d06019a8
+      internalID: -2113822287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_02
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 143
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5104895, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4975348c3a4d30d47be66446044e2dcf
+      internalID: 1231231570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_03
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 142
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5140845, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84fbb5f6f5db27b4993f85dd426a7215
+      internalID: 1617495382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_04
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 142
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5140845, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7416f5dd19d73c4bbdcaa26d64673be
+      internalID: -1983722042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_05
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 64
+        width: 142
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5140845, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d87372b96755cd248af456c49e923ce5
+      internalID: 574202748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_06
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 142
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5140845, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 037d577cdcbd6904ba233c75a50b3948
+      internalID: 386764370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_07
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 0
+        width: 141
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5177305, y: 0.20634921}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c65f5cdf08f6c4294a10ad0be40c4d
+      internalID: 1425948466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_08
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 63
+        width: 141
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5177305, y: 0.20634921}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d96cff059981284b830ac60b725e60a
+      internalID: 441363943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_09
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 126
+        width: 141
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5177305, y: 0.20634921}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d030928ac71a01840862602d87486991
+      internalID: 57663171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_10
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 189
+        width: 141
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5177305, y: 0.20634921}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77086aa716541274d82f30c534dda5f2
+      internalID: 1827720998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_11
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 252
+        width: 141
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5177305, y: 0.20634921}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0f389dc9940824bb71988fa38de843
+      internalID: -1440798966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_12
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 443
+        width: 140
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5214286, y: 0.20634921}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7f8e4464e783744bfaa0d02cd87787
+      internalID: -1470261519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_13
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 384
+        width: 140
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5214286, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66a226fd129aee48b7dd4fbe509043c
+      internalID: 2006646219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_14
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 0
+        width: 139
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5179856, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72b183abb65fff46b6f6ca473800fc1
+      internalID: 627827559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_15
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 64
+        width: 139
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5179856, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be3e77d480664a049bc02d27a5ff1a35
+      internalID: 166233318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_16
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 448
+        width: 140
+        height: 64
+      alignment: 9
+      pivot: {x: 0.51428574, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b72611bd96a414b9700f898168806d
+      internalID: 1120629932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_17
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 128
+        width: 139
+        height: 64
+      alignment: 9
+      pivot: {x: 0.51079136, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 812edb6eed1a7434da9c2e7ef0d8539a
+      internalID: -1891717462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_18
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 192
+        width: 139
+        height: 64
+      alignment: 9
+      pivot: {x: 0.51079136, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85c5d1c394491e4fb5419206fc51c98
+      internalID: -1879871158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_19
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 256
+        width: 139
+        height: 64
+      alignment: 9
+      pivot: {x: 0.51079136, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9797bc9afdd443543b5f9efe0500a673
+      internalID: 1195279413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_20
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 315
+        width: 138
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5072464, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a14ecdd817a48d42b3bafdb8d6d7e82
+      internalID: 1232735815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_21
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 379
+        width: 138
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5072464, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611ab2731199ae549a2c1b4e73d67ca1
+      internalID: 361167098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_22
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 320
+        width: 139
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50359714, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c0ce44d17488141b9098a97bf8b845
+      internalID: 678290365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_23
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 384
+        width: 139
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50359714, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aff86a9260591c4c875fe6402345fa9
+      internalID: 2124919249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_24
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 448
+        width: 139
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50359714, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af9f1f709b59064ca50d908c044c36c
+      internalID: 755501668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_25
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 320
+        width: 141
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5035461, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d694916bd6f965d44a317507c4e39ffc
+      internalID: 2106369479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_26
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 142
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5070422, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363b9386402bd724b978ec500a35d4ea
+      internalID: -2057452361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_27
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 256
+        width: 142
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5070422, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04b42eb778d6604a8bce3d48e19d02a
+      internalID: -634793619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 143
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5104895, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9d1aa5c03a27e4aa15f1c27874843e
+      internalID: -574164946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 143
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5104895, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8be59b429919f74a91e934f8de7f531
+      internalID: 1269637399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 144
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5069444, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a087475868b544a9f6927e2632341b
+      internalID: -124412412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiger_001_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 144
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5069444, y: 0.203125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0799aee75772ba24aaadd01f0cfddddf
+      internalID: 959137333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: afa3d54da51bfdc498349d94e377fc3a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 98df83265bc4ec14f8f7734ac77d0fbf, type: 3}
+      name: _NormalMap
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Tiger_001_00: 1799623555
+      Tiger_001_01: -2113822287
+      Tiger_001_02: 1231231570
+      Tiger_001_03: 1617495382
+      Tiger_001_04: -1983722042
+      Tiger_001_05: 574202748
+      Tiger_001_06: 386764370
+      Tiger_001_07: 1425948466
+      Tiger_001_08: 441363943
+      Tiger_001_09: 57663171
+      Tiger_001_10: 1827720998
+      Tiger_001_11: -1440798966
+      Tiger_001_12: -1470261519
+      Tiger_001_13: 2006646219
+      Tiger_001_14: 627827559
+      Tiger_001_15: 166233318
+      Tiger_001_16: 1120629932
+      Tiger_001_17: -1891717462
+      Tiger_001_18: -1879871158
+      Tiger_001_19: 1195279413
+      Tiger_001_20: 1232735815
+      Tiger_001_21: 361167098
+      Tiger_001_22: 678290365
+      Tiger_001_23: 2124919249
+      Tiger_001_24: 755501668
+      Tiger_001_25: 2106369479
+      Tiger_001_26: -2057452361
+      Tiger_001_27: -634793619
+      Tiger_001_28: -574164946
+      Tiger_001_29: 1269637399
+      Tiger_001_30: -124412412
+      Tiger_001_31: 959137333
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

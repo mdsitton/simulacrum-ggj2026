@@ -1,0 +1,149 @@
+fileFormatVersion: 2
+guid: ef75b11affaddc9408d3d2fceb3a89e8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 1
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 1
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 97afe012b7b0f064bb21f8f858eb364a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      casual_Male_K_dead_00: 252164458
+      casual_Male_K_dead_01: -2057585244
+      casual_Male_K_dead_02: 198793945
+      casual_Male_K_dead_03: 1568752429
+      casual_Male_K_dead_04: 1440545938
+      casual_Male_K_dead_05: 1471482498
+      casual_Male_K_dead_06: 1179817234
+      casual_Male_K_dead_07: -1576596883
+      casual_Male_K_dead_08: 1067285204
+      casual_Male_K_dead_09: 97732861
+      casual_Male_K_dead_10: 2014293827
+      casual_Male_K_dead_11: 1770177918
+      casual_Male_K_dead_12: 218534658
+      casual_Male_K_dead_13: 1984920564
+      casual_Male_K_dead_14: -1555065683
+      casual_Male_K_dead_15: -857745190
+      casual_Male_K_dead_16: 79441047
+      casual_Male_K_dead_17: -1710894550
+      casual_Male_K_dead_18: -949205223
+      casual_Male_K_dead_19: 1619866113
+      casual_Male_K_dead_20: 370722244
+      casual_Male_K_dead_21: -39390365
+      casual_Male_K_dead_22: 1029041302
+      casual_Male_K_dead_23: -494257651
+      casual_Male_K_dead_24: -609273069
+      casual_Male_K_dead_25: -251369874
+      casual_Male_K_dead_26: -2032102331
+      casual_Male_K_dead_27: -1078373130
+      casual_Male_K_dead_28: 526115271
+      casual_Male_K_dead_29: -1626533465
+      casual_Male_K_dead_30: 1771821391
+      casual_Male_K_dead_31: -2095023865
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
