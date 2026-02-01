@@ -15,6 +15,7 @@ public class PlayerInputControls : MonoBehaviour
     public VisualEffect Transfer;
 
     public GameObject TransferTarget;
+    public AudioSource TransferSound;
 
     public Vector2 Look { get; private set; }
 
@@ -311,7 +312,7 @@ public class PlayerInputControls : MonoBehaviour
             if(currentTarget != null && currentTarget.CanInteract(this) == InteractionMode.CanInteract) {
                 currentTarget.Interact();                
             }   else {
-                Interact();
+                TryTransfer();
             }
         }
 
@@ -324,7 +325,7 @@ public class PlayerInputControls : MonoBehaviour
     Interactable GetInteractable()
     {
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(CurrentPlayerAnimator.GetLocation().position, (float)0.5);
-        UnityEngine.Debug.Log("Hit Colliders: " + hitColliders.Length);
+        // UnityEngine.Debug.Log("Hit Colliders: " + hitColliders.Length);
         foreach (Collider2D other in hitColliders)
         {
             Interactable target = other.GetComponent<Interactable>();
@@ -337,14 +338,14 @@ public class PlayerInputControls : MonoBehaviour
         return null;
     }
 
-    void Interact(){
+    void TryTransfer(){
 
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(CurrentPlayerAnimator.GetLocation().position, 1f);
         UnityEngine.Debug.Log("Player test hit Colliders: " + hitColliders.Length);
         foreach (Collider2D other in hitColliders)
         {
             PlayerAnimator target = other.GetComponent<PlayerAnimator>();
-            if (target != null && target != CurrentPlayerAnimator)
+            if (target != null && target != CurrentPlayerAnimator && target.IsAlive())
             {
                 UnityEngine.Debug.Log("Switch");
                 CurrentPlayerAnimator.SetState(CharacterState.Die);
@@ -353,6 +354,7 @@ public class PlayerInputControls : MonoBehaviour
                 //TransferTarget posiition updated in update loop
 
                 Transfer.Play();
+                TransferSound.Play();
 
                 CurrentPlayerAnimator = target;
                 Move = Vector2.zero;

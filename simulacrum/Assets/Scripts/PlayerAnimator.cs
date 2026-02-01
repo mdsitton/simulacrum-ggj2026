@@ -28,7 +28,7 @@ public enum CharacterColor
     None,
 }
 
-public class PlayerAnimator : MonoBehaviour, Interactable
+public class PlayerAnimator : MonoBehaviour
 {
     [SerializeField]
     private PlayerSpriteSet spriteSet;
@@ -188,39 +188,9 @@ public class PlayerAnimator : MonoBehaviour, Interactable
         UpdateSprite();
     }
 
-    public void Interact()
+    public bool IsAlive()
     {
-        
-        // TODO: Move part of transfer here?
+        return !isDead;
     }
-
-    public InteractionMode CanInteract(PlayerInputControls player)
-    {
-        // if (player.CurrentPlayerAnimator != this)
-        // {            
-        //   return InteractionMode.CanInteract;            
-        // } else
-        // {
-            return InteractionMode.None;
-        // }
-    } 
-
-    public void SetInteractionMode(InteractionMode mode)
-    {
-        // switch (mode)
-        // {
-        //     case InteractionMode.CanInteract:
-        //         Access.enabled = true;
-        //         NoAccess.enabled = false;
-        //         break;
-        //     case InteractionMode.CannontInteract:
-        //         Access.enabled = false;
-        //         NoAccess.enabled = true;
-        //         break;
-        //     case InteractionMode.None:
-        //         Access.enabled = false;
-        //         NoAccess.enabled = false;
-        //         break;
-        // }
-    }
+   
 }
