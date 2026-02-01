@@ -22,6 +22,7 @@ public class PlayerInputControls : MonoBehaviour
     private Vector2 previousMove;
     private Camera mainCamera;
     private Vector3 cameraVelocity;
+    private Interactable currentTarget;
 
     private InputSystem_Actions actions;
 
@@ -288,26 +289,51 @@ public class PlayerInputControls : MonoBehaviour
             CurrentPlayerAnimator.SetVelocity(Vector2.zero);
         }
 
-        if (actions.Player.Interact.WasPressedThisFrame())
+        Interactable target = GetInteractable();
+        if (target != currentTarget)
         {
-            Interact();
-        }
-    }
-
-    void Interact()
-    {
-        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(CurrentPlayerAnimator.GetLocation().position, (float)0.5);
-        foreach (Collider2D other in hitColliders)
-        {
-            Door door = other.GetComponent<Door>();
-            if (door != null)
+            // New target in range
+            if (currentTarget != null)
             {
-                door.Open();
-                return;
+                // Clear previous target
+                currentTarget.SetInteractionMode(InteractionMode.None);
+            }
+            currentTarget = target;
+            if (currentTarget != null) { 
+                currentTarget.SetInteractionMode(currentTarget.CanInteract(this));
             }
         }
 
-        hitColliders = Physics2D.OverlapCircleAll(CurrentPlayerAnimator.GetLocation().position, (float)3);
+
+        if (actions.Player.Interact.WasPressedThisFrame())
+        {
+            if(currentTarget != null) {
+                currentTarget.Interact();
+            }   else {
+                Interact();
+            }
+        }
+    }
+
+    Interactable GetInteractable()
+    {
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(CurrentPlayerAnimator.GetLocation().position, (float)0.5);
+        UnityEngine.Debug.Log("Hit Colliders: " + hitColliders.Length);
+        foreach (Collider2D other in hitColliders)
+        {
+            Interactable target = other.GetComponent<Interactable>();
+            UnityEngine.Debug.Log("target: " + target);
+            if (target != null && target.CanInteract(this) != InteractionMode.None)
+            {
+                return target;
+            }
+        }
+        return null;
+    }
+
+    void Interact(){
+
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(CurrentPlayerAnimator.GetLocation().position, (float)3);
         foreach (Collider2D other in hitColliders)
         {
             PlayerAnimator target = other.GetComponent<PlayerAnimator>();

@@ -20,7 +20,7 @@ public enum CharacterDirection
     Angle360   // North (same as 0 degrees)
 }
 
-public class PlayerAnimator : MonoBehaviour
+public class PlayerAnimator : MonoBehaviour, Interactable
 {
     [SerializeField]
     private PlayerSpriteSet spriteSet;
@@ -148,5 +148,41 @@ public class PlayerAnimator : MonoBehaviour
             frameIndex = (frameIndex + 1) % frameCount;
         }
         UpdateSprite();
+    }
+
+    public void Interact()
+    {
+        
+        // TODO: Move part of transfer here?
+    }
+
+    public InteractionMode CanInteract(PlayerInputControls player)
+    {
+        if (player.CurrentPlayerAnimator != this)
+        {            
+          return InteractionMode.CanInteract;            
+        } else
+        {
+            return InteractionMode.None;
+        }
+    } 
+
+    public void SetInteractionMode(InteractionMode mode)
+    {
+        // switch (mode)
+        // {
+        //     case InteractionMode.CanInteract:
+        //         Access.enabled = true;
+        //         NoAccess.enabled = false;
+        //         break;
+        //     case InteractionMode.CannontInteract:
+        //         Access.enabled = false;
+        //         NoAccess.enabled = true;
+        //         break;
+        //     case InteractionMode.None:
+        //         Access.enabled = false;
+        //         NoAccess.enabled = false;
+        //         break;
+        // }
     }
 }

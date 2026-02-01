@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3584598135193015031}
   - component: {fileID: 6296906006922704430}
   m_Layer: 0
-  m_Name: DoorRightBlue
+  m_Name: DoorRightPurple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86,7 +86,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -437249697, guid: 5388389487cb3e94cb7f9d22ef525fc2, type: 3}
+  m_Sprite: {fileID: -1779158538, guid: 5388389487cb3e94cb7f9d22ef525fc2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
