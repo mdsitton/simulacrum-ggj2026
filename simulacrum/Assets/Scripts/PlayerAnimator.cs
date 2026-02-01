@@ -54,6 +54,10 @@ public class PlayerAnimator : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         playerBody = GetComponent<Rigidbody2D>();
         frameTime = 1f / framerate;
+
+        // Start in standing state with position frozen
+        state = CharacterState.Standing;
+        playerBody.constraints = RigidbodyConstraints2D.FreezeAll;
     }
 
     public void SetState(CharacterState newState)
@@ -67,6 +71,13 @@ public class PlayerAnimator : MonoBehaviour
         if (state == CharacterState.Standing)
         {
             playerBody.linearVelocity = Vector2.zero;
+            // Freeze position to prevent being pushed by collisions
+            playerBody.constraints = RigidbodyConstraints2D.FreezeAll;
+        }
+        else if (state == CharacterState.Walking)
+        {
+            // Unfreeze position for movement, keep rotation frozen
+            playerBody.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
     }
 
