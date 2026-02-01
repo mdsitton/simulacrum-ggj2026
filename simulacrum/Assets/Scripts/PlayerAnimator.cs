@@ -96,7 +96,7 @@ public class PlayerAnimator : MonoBehaviour
                 velocity = moveVector.normalized;
             }
 
-            playerBody.linearVelocity = velocity * 2f;
+            playerBody.linearVelocity = velocity * 1.5f;
         }
     }
 
