@@ -12,16 +12,32 @@
             "scale": 0.75,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 1718.6666666666665,
-                "y": 532.6666666666666
+                "x": 1860,
+                "y": 794.6666666666667
+            }
+        },
+        "Tiles/level-map.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 245,
+                "y": 293
+            }
+        },
+        "Tiles/test-door-map.tmx": {
+            "scale": 2,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 355.5,
+                "y": 251.5
             }
         },
         "Tiles/test-map.tmx": {
-            "scale": 4,
+            "scale": 1.5,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 348.5,
-                "y": 169.125
+                "x": 278,
+                "y": 271.99999999999994
             }
         }
     },
@@ -31,6 +47,7 @@
     ],
     "project": "simulacrum-tiles.tiled-project",
     "recentFiles": [
+        "Tiles/level-map.tmx",
         "Tiles/isometric-sandbox-32x32/isometric-sandbox-map.tmx"
     ]
 }
