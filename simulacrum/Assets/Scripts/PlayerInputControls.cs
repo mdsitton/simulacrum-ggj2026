@@ -6,12 +6,44 @@ using UnityEngine.InputSystem.Controls;
 using UnityEngine.VFX;
 using static InputSystem_Actions;
 
-public class PlayerInputControls : MonoBehaviour
+public class PlayerInputControls : MonoBehaviour, ICharacterController
 {
     public Vector3 cameraOffset = new Vector3();
-    public float cameraFollowTime = 0.2f; 
+    public float cameraFollowTime = 0.2f;
 
     public PlayerAnimator CurrentPlayerAnimator;
+    private bool isActive = false;
+
+    // ICharacterController implementation
+    public bool IsActive => isActive;
+    public PlayerAnimator ControlledAnimator => CurrentPlayerAnimator;
+
+    public void Activate(PlayerAnimator animator)
+    {
+        if (animator == null) return;
+
+        CurrentPlayerAnimator = animator;
+        isActive = true;
+        CurrentPlayerAnimator.SetActiveController(this);
+
+        // Reset movement state when activating
+        Move = Vector2.zero;
+        hasLockedDirection = false;
+        mouseClickDestination = null;
+    }
+
+    public void Deactivate()
+    {
+        if (CurrentPlayerAnimator != null)
+        {
+            CurrentPlayerAnimator.SetState(CharacterState.Standing);
+            CurrentPlayerAnimator.SetVelocity(Vector2.zero);
+        }
+        isActive = false;
+        Move = Vector2.zero;
+        hasLockedDirection = false;
+        mouseClickDestination = null;
+    }
     public VisualEffect Transfer;
 
     public GameObject TransferTarget;
@@ -68,6 +100,12 @@ public class PlayerInputControls : MonoBehaviour
         mainCamera = Camera.main;
         actions = new InputSystem_Actions();
         actions.Player.Enable();
+
+        // Activate initial player if set in editor
+        if (CurrentPlayerAnimator != null)
+        {
+            Activate(CurrentPlayerAnimator);
+        }
     }
 
     /// <summary>
@@ -88,7 +126,7 @@ public class PlayerInputControls : MonoBehaviour
     /// - Sprite 315° = Northwest = Math 135°
     /// - Sprite 360° = North = Math 90°
     /// </summary>
-    private CharacterDirection GetDirectionFromVector(Vector2 directionVector)
+    public static CharacterDirection GetDirectionFromVector(Vector2 directionVector)
     {
         // Calculate angle in degrees using standard math convention
         // Atan2(y, x) gives: 0° = right, 90° = up, 180°/-180° = left, -90° = down
@@ -141,7 +179,7 @@ public class PlayerInputControls : MonoBehaviour
 
     private void Update()
     {
-        if (CurrentPlayerAnimator == null) return;
+        if (!isActive || CurrentPlayerAnimator == null) return;
 
         previousMove = Move;
         var move = actions.Player.Move.ReadValue<Vector2>();
@@ -265,13 +303,13 @@ public class PlayerInputControls : MonoBehaviour
         }
 
         if (mainCamera != null)
-        {            
+        {
             Vector3 desiredPosition = CurrentPlayerAnimator.GetLocation().position + cameraOffset;
             desiredPosition.z = mainCamera.transform.position.z;
             //UnityEngine.Debug.Log("Desired Position " + desiredPosition);
             var lerp = Vector3.SmoothDamp(mainCamera.transform.position, desiredPosition, ref cameraVelocity, cameraFollowTime);
             // UnityEngine.Debug.Log("Lerp " + lerp);
-            mainCamera.transform.position  = lerp;
+            mainCamera.transform.position = lerp;
             // UnityEngine.Debug.Log("Camera Position " + mainCamera.transform.position);
 
         }
@@ -300,7 +338,8 @@ public class PlayerInputControls : MonoBehaviour
                 currentTarget.SetInteractionMode(InteractionMode.None);
             }
             currentTarget = target;
-            if (currentTarget != null) { 
+            if (currentTarget != null)
+            {
                 currentTarget.SetInteractionMode(currentTarget.CanInteract(this));
             }
         }
@@ -308,9 +347,12 @@ public class PlayerInputControls : MonoBehaviour
 
         if (actions.Player.Interact.WasPressedThisFrame())
         {
-            if(currentTarget != null && currentTarget.CanInteract(this) == InteractionMode.CanInteract) {
-                currentTarget.Interact();                
-            }   else {
+            if (currentTarget != null && currentTarget.CanInteract(this) == InteractionMode.CanInteract)
+            {
+                currentTarget.Interact();
+            }
+            else
+            {
                 Interact();
             }
         }
@@ -324,7 +366,7 @@ public class PlayerInputControls : MonoBehaviour
     Interactable GetInteractable()
     {
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(CurrentPlayerAnimator.GetLocation().position, (float)0.5);
-        UnityEngine.Debug.Log("Hit Colliders: " + hitColliders.Length);
+        // UnityEngine.Debug.Log("Hit Colliders: " + hitColliders.Length);
         foreach (Collider2D other in hitColliders)
         {
             Interactable target = other.GetComponent<Interactable>();
@@ -337,10 +379,11 @@ public class PlayerInputControls : MonoBehaviour
         return null;
     }
 
-    void Interact(){
+    void Interact()
+    {
 
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(CurrentPlayerAnimator.GetLocation().position, 1f);
-        UnityEngine.Debug.Log("Player test hit Colliders: " + hitColliders.Length);
+        // UnityEngine.Debug.Log("Player test hit Colliders: " + hitColliders.Length);
         foreach (Collider2D other in hitColliders)
         {
             PlayerAnimator target = other.GetComponent<PlayerAnimator>();
@@ -354,8 +397,8 @@ public class PlayerInputControls : MonoBehaviour
 
                 Transfer.Play();
 
-                CurrentPlayerAnimator = target;
-                Move = Vector2.zero;
+                // Use the interface to properly switch control
+                Activate(target);
                 return;
             }
         }
