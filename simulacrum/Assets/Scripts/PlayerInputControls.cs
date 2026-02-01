@@ -39,6 +39,13 @@ public class PlayerInputControls : MonoBehaviour, ICharacterController
             CurrentPlayerAnimator.SetState(CharacterState.Standing);
             CurrentPlayerAnimator.SetVelocity(Vector2.zero);
         }
+
+        // Hide spin selector when deactivating
+        if (spinSelector != null)
+        {
+            spinSelector.gameObject.SetActive(false);
+        }
+
         isActive = false;
         Move = Vector2.zero;
         hasLockedDirection = false;
@@ -56,6 +63,9 @@ public class PlayerInputControls : MonoBehaviour, ICharacterController
     private Camera mainCamera;
     private Vector3 cameraVelocity;
     private Interactable currentTarget;
+
+    [SerializeField]
+    private SpinSelector spinSelector;
 
     private InputSystem_Actions actions;
 
@@ -101,6 +111,12 @@ public class PlayerInputControls : MonoBehaviour, ICharacterController
         mainCamera = Camera.main;
         actions = new InputSystem_Actions();
         actions.Player.Enable();
+
+        // Disable spin selector on start
+        if (spinSelector != null)
+        {
+            spinSelector.gameObject.SetActive(false);
+        }
 
         // Activate initial player if set in editor
         if (CurrentPlayerAnimator != null)
@@ -345,12 +361,18 @@ public class PlayerInputControls : MonoBehaviour, ICharacterController
             }
         }
 
+        // Update spin selector to show nearest transfer target
+        UpdateSpinSelector();
+
 
         if (actions.Player.Interact.WasPressedThisFrame())
         {
-            if(currentTarget != null && currentTarget.CanInteract(this) == InteractionMode.CanInteract) {
-                currentTarget.Interact();                
-            }   else {
+            if (currentTarget != null && currentTarget.CanInteract(this) == InteractionMode.CanInteract)
+            {
+                currentTarget.Interact();
+            }
+            else
+            {
                 TryTransfer();
 
             }
@@ -378,29 +400,76 @@ public class PlayerInputControls : MonoBehaviour, ICharacterController
         return null;
     }
 
-    void TryTransfer(){
-
-
+    /// <summary>
+    /// Finds the nearest valid transfer target (another alive PlayerAnimator).
+    /// </summary>
+    PlayerAnimator GetTransferTarget()
+    {
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(CurrentPlayerAnimator.GetLocation().position, 1f);
-        // UnityEngine.Debug.Log("Player test hit Colliders: " + hitColliders.Length);
+        PlayerAnimator nearestTarget = null;
+        float nearestDistance = float.MaxValue;
+
         foreach (Collider2D other in hitColliders)
         {
             PlayerAnimator target = other.GetComponent<PlayerAnimator>();
             if (target != null && target != CurrentPlayerAnimator && target.IsAlive())
             {
-                UnityEngine.Debug.Log("Switch");
-                CurrentPlayerAnimator.SetState(CharacterState.Die);
-
-                Transfer.transform.position = CurrentPlayerAnimator.GetTransferTarget().position;
-                //TransferTarget posiition updated in update loop
-
-                Transfer.Play();
-                TransferSound.Play();
-
-                // Use the interface to properly switch control
-                Activate(target);
-                return;
+                float distance = Vector2.Distance(CurrentPlayerAnimator.GetLocation().position, target.GetLocation().position);
+                if (distance < nearestDistance)
+                {
+                    nearestDistance = distance;
+                    nearestTarget = target;
+                }
             }
+        }
+        return nearestTarget;
+    }
+
+    /// <summary>
+    /// Updates the spin selector position and visibility based on transfer target availability.
+    /// </summary>
+    void UpdateSpinSelector()
+    {
+        if (spinSelector == null) return;
+
+        PlayerAnimator transferTarget = GetTransferTarget();
+
+        if (transferTarget != null)
+        {
+            // Move selector to target and enable it
+            spinSelector.transform.position = transferTarget.GetLocation().position;
+            spinSelector.gameObject.SetActive(true);
+        }
+        else
+        {
+            // No valid target - hide selector
+            spinSelector.gameObject.SetActive(false);
+        }
+    }
+
+    void TryTransfer()
+    {
+
+        PlayerAnimator target = GetTransferTarget();
+        if (target != null)
+        {
+            UnityEngine.Debug.Log("Switch");
+            CurrentPlayerAnimator.SetState(CharacterState.Die);
+
+            Transfer.transform.position = CurrentPlayerAnimator.GetTransferTarget().position;
+            //TransferTarget position updated in update loop
+
+            Transfer.Play();
+            TransferSound.Play();
+
+            // Hide selector during transfer
+            if (spinSelector != null)
+            {
+                spinSelector.gameObject.SetActive(false);
+            }
+
+            // Use the interface to properly switch control
+            Activate(target);
         }
     }
 }
