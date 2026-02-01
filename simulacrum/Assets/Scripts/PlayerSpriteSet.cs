@@ -12,14 +12,21 @@ public class PlayerSpriteSet : ScriptableObject
     [SerializeField] Sprite[] idle270;
     [SerializeField] Sprite[] idle315;
     [SerializeField] Sprite[] idle360;
-    public int idleAnimationTime = 8;
+    public float idleAnimationTime = 8;
 
     [Header("Sitting Animations - 8 Directions")]
     [SerializeField] Sprite[] sittingSprites = new Sprite[8];
 
-    [Header("Death Animations")]
-    [SerializeField] Sprite dieFront;
-    [SerializeField] Sprite dieLeft;
+    [Header("Death Animations - 8 Directions")]
+    [SerializeField] Sprite[] die45;   // Northeast
+    [SerializeField] Sprite[] die90;   // East
+    [SerializeField] Sprite[] die135;  // Southeast
+    [SerializeField] Sprite[] die180;  // South
+    [SerializeField] Sprite[] die225;  // Southwest
+    [SerializeField] Sprite[] die270;  // West
+    [SerializeField] Sprite[] die315;  // Northwest
+    [SerializeField] Sprite[] die360;  // North
+    public float dieAnimationTime = 8;   // Animation duration in frames/time units
 
     [Header("Walking Animations - 8 Directions")]
     [SerializeField] Sprite[] walking45;   // Northeast
@@ -30,11 +37,12 @@ public class PlayerSpriteSet : ScriptableObject
     [SerializeField] Sprite[] walking270;  // West
     [SerializeField] Sprite[] walking315;  // Northwest
     [SerializeField] Sprite[] walking360;  // North
-    public int walkingAnimationTime = 1;
+    public float walkingAnimationTime = 1;
 
     // Cached arrays for runtime lookup - indexed by CharacterDirection (0-7)
     private Sprite[][] idleAnimations;
     private Sprite[][] walkingAnimations;
+    private Sprite[][] dieAnimations;
 
     private void OnEnable()
     {
@@ -53,6 +61,12 @@ public class PlayerSpriteSet : ScriptableObject
         {
             walking45, walking90, walking135, walking180,
             walking225, walking270, walking315, walking360
+        };
+
+        dieAnimations = new Sprite[][]
+        {
+            die45, die90, die135, die180,
+            die225, die270, die315, die360
         };
     }
 
@@ -75,6 +89,13 @@ public class PlayerSpriteSet : ScriptableObject
         return (anim != null && anim.Length > 0) ? anim : walkingAnimations?[3]; // Fallback to walking180
     }
 
+    private Sprite[] GetDieAnimation(CharacterDirection direction)
+    {
+        int index = GetDirectionIndex(direction);
+        Sprite[] anim = dieAnimations?[index];
+        return (anim != null && anim.Length > 0) ? anim : dieAnimations?[3]; // Fallback to die180
+    }
+
     public (Sprite sprite, int frameCount, float frameTime) GetSprite(CharacterState state, CharacterDirection direction, int frameIndex = 0)
     {
         int dirIndex = GetDirectionIndex(direction);
@@ -94,20 +115,11 @@ public class PlayerSpriteSet : ScriptableObject
                 return (sittingSprites[3], 1, 1.0f);
 
             case CharacterState.Die:
-                // Death only has front and left variants
-                var spriteDie = direction switch
-                {
-                    CharacterDirection.Angle45 => dieFront,
-                    CharacterDirection.Angle90 => dieLeft,
-                    CharacterDirection.Angle135 => dieLeft,
-                    CharacterDirection.Angle180 => dieFront,
-                    CharacterDirection.Angle225 => dieLeft,
-                    CharacterDirection.Angle270 => dieLeft,
-                    CharacterDirection.Angle315 => dieLeft,
-                    CharacterDirection.Angle360 => dieFront,
-                    _ => dieFront,
-                };
-                return (spriteDie, 1, 1.0f);
+                var dieAnimation = GetDieAnimation(direction);
+                var dieFrameTime = (float)dieAnimationTime / dieAnimation.Length;
+                if (dieAnimation != null && dieAnimation.Length > 0)
+                    return (dieAnimation[frameIndex % dieAnimation.Length], dieAnimation.Length, dieFrameTime);
+                return (null, 0, dieFrameTime);
 
             case CharacterState.Walking:
                 var spriteAnimation = GetWalkingAnimation(direction);

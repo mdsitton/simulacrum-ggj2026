@@ -1,0 +1,1591 @@
+fileFormatVersion: 2
+guid: 06694bb4b79371b4f8d9bc64383276fe
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: casual_Male_K_00
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 432
+        width: 28
+        height: 73
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1369863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc9bb58192c04294b9a79c0f846a0ee9
+      internalID: -184620969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_01
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 433
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2f5b734e091dc48bf58f211a2f6593
+      internalID: 2016136021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_02
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 73
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8031ade74ddc9b646915390bffc2fadf
+      internalID: 928119981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_03
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 73
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c34aa4824c3134aaa7a0bc81cd219c
+      internalID: 1355697966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_04
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 73
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd52240ff74ffa5418b52a90821c713d
+      internalID: 1069268145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_05
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 145
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b3f2f3b14f5b8d49986bc88242aac00
+      internalID: 277729881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_06
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 217
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57bf7a2f00db8a40a89089b07927a13
+      internalID: -1923627295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_07
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 0
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef8e77aa94e2dc459172f23b2630856
+      internalID: -1704153388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_08
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 0
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef4357d1cb05a9449ef58de7f58139f
+      internalID: -2082851708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_09
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 0
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e5efe5be8ce3d34d80c3da08c19af10
+      internalID: -1871188841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_10
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 0
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ce55525731cd94b90101f9d08f1721
+      internalID: 1374375015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_11
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 0
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f24c476e16ebe41913d7c2f614c5af
+      internalID: -1363781494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_12
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 0
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9467d67cb0bb81d45bec181383c2eb85
+      internalID: 1469442511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_13
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 0
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976fb40e6b1173842899e05cabc57d58
+      internalID: 1977375563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_14
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 0
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260166bdc46fe3343b6271420acd14b2
+      internalID: 459287305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_15
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52380363ea46f54489cea7889dfe68a6
+      internalID: -639772026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_16
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 0
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b4a33630dfd81244848e57ef1833caf
+      internalID: -1691982901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_17
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 73
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d6fac68be70ac4cbeaa3b7041af6be
+      internalID: -1661067378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_18
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 216
+        width: 29
+        height: 72
+      alignment: 9
+      pivot: {x: 0.51724136, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6716c974fd4cacf4faf63de52725c8b4
+      internalID: -1843002136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_19
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 288
+        width: 29
+        height: 72
+      alignment: 9
+      pivot: {x: 0.51724136, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a8ea8dff3527740b300d69e56c8fb1
+      internalID: -672967721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_20
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 360
+        width: 29
+        height: 72
+      alignment: 9
+      pivot: {x: 0.51724136, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 629c8a2559f88f84390c80f50dd606fc
+      internalID: -729126932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 29
+        height: 73
+      alignment: 9
+      pivot: {x: 0.51724136, y: 0.1369863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa1f5f64aece5194bbe5d38200532d66
+      internalID: -2091035530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 73
+        width: 29
+        height: 73
+      alignment: 9
+      pivot: {x: 0.51724136, y: 0.1369863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff1471d87d59af48bd3d7ae681b943a
+      internalID: 1322418839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 146
+        width: 29
+        height: 73
+      alignment: 9
+      pivot: {x: 0.51724136, y: 0.1369863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20cd6d63fc692844acab6028ef162d4
+      internalID: -1300505879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 219
+        width: 29
+        height: 73
+      alignment: 9
+      pivot: {x: 0.51724136, y: 0.1369863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b420187ddc59d24e8fb68a7ab58a0d0
+      internalID: -1293360026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 292
+        width: 29
+        height: 73
+      alignment: 9
+      pivot: {x: 0.51724136, y: 0.1369863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e442d954c50fa2240a601bfc99fbf41d
+      internalID: 2134813571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 365
+        width: 29
+        height: 73
+      alignment: 9
+      pivot: {x: 0.51724136, y: 0.1369863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07ebd4c5edaf3e4d92caff45057eb52
+      internalID: -1957004728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 438
+        width: 29
+        height: 72
+      alignment: 9
+      pivot: {x: 0.51724136, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e02ed7a563cb24188b819f30d3c1ac
+      internalID: 706624105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_28
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 0
+        width: 29
+        height: 72
+      alignment: 9
+      pivot: {x: 0.51724136, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162099b3c77f2e94d85ccf1768f19cfb
+      internalID: 414739734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_29
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 72
+        width: 29
+        height: 72
+      alignment: 9
+      pivot: {x: 0.51724136, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ab39df85f8a9f4f837531ec2c786c0
+      internalID: 1118267552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_30
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 144
+        width: 29
+        height: 72
+      alignment: 9
+      pivot: {x: 0.51724136, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f113333dc5ee54db524e3e986ec0fd
+      internalID: 964514713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_31
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 145
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6ec385a8fed1b48aa4839efbc25250
+      internalID: -1229938242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_32
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 217
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84a3e7d5e2439fc48a6a6c2eb9c3a70a
+      internalID: 1251397813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_33
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 289
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ba8d69bc3f92746933b16ed7d5946f
+      internalID: -2010780488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_34
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 361
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8f4d3cdd713cb46b7cf72e89127379
+      internalID: -1155408364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_35
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 433
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f33d18a40bdfb458703ef695fcf1a3
+      internalID: -1454043846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_36
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 73
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0275f6b73c4864a9b5e6c1ef038c4b
+      internalID: -1592695537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_37
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 145
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ece865a16bc2c4f9b565bd42ca5531
+      internalID: -1954804848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_38
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 217
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c73e3e469653b9f438fb50b6f7eaa6f9
+      internalID: 1451672581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_39
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 289
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3beaac00ad264747ad91840feec2701
+      internalID: 2091270965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_40
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 361
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030a13dba04385f43a0a7bdd9160f509
+      internalID: -286514748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_41
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 433
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f4f53b2464d6045993cc8a88e9a896
+      internalID: 229627553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_42
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 73
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7cfb1a3c89de2498188460b68156f2
+      internalID: 113995409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_43
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 145
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2045843735b85440b9cc3a3c85fdf80
+      internalID: 619984575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_44
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 217
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9f972977184ed4cad532c99bde1673
+      internalID: -1460518148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_45
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 289
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32eac1df76904994ca092e83d656bde8
+      internalID: -204445199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_46
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 361
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a358e0d394c8b02458eb94e49141d293
+      internalID: 554098219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_47
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 73
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef7c1968ec3f4b4198f4fbaacd23bad
+      internalID: 1631115993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_48
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 73
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e2ec12ee2ef87419f505921e963196
+      internalID: 1319253171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_49
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 73
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb2d4f4d7bd3e64bb6a464333334fa0
+      internalID: -1148279562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_50
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 73
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ffb8fd22077b0846a76cbfe6e914441
+      internalID: 1428737105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_51
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 73
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0342cd9e521623e47b2e4c1dcca1e260
+      internalID: 806303970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_52
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 73
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408438d7b2c9dda449703dbe267b0bc5
+      internalID: -1273471687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_53
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 73
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f27b1d67816f1844a1919b6a2e80635
+      internalID: -1039910105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_54
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 73
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a52509bc54ba4b84fac962458ac49b34
+      internalID: 1293614684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_55
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 289
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a69b6811b40bb44582e4a4584defde6
+      internalID: 1962001437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_56
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 73
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a45c7a27f66fb84ba2c39f5fbc63f75
+      internalID: 90328703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_57
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 73
+        width: 28
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9964b693db0ee7c41846630b49f3ff8d
+      internalID: -1939596719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_58
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 0
+        width: 28
+        height: 73
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1369863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d31f883647d0f4bb0e809662318448
+      internalID: -521973768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_59
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 0
+        width: 28
+        height: 73
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1369863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530407f86b661744381d0fc70f82c3e6
+      internalID: 1671416328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_60
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 0
+        width: 28
+        height: 73
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1369863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd50db1ec3534d4489abea8dde102a67
+      internalID: -1561994392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_61
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 0
+        width: 28
+        height: 73
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1369863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb44b0950ba4e5041980206b15c6030e
+      internalID: 457943919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_62
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 0
+        width: 28
+        height: 73
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1369863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123b5bef84bb6f9478ec3bd4a31d3f04
+      internalID: -1104399148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual_Male_K_63
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 0
+        width: 28
+        height: 73
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1369863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8a117f6b1cac84993cf840717848db
+      internalID: -709444725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d20d5bec29d18654480cc30e015edf33
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 5c968376e46b5274fbbeb4818077ae50, type: 3}
+      name: _NormalMap
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      casual_Male_K_00: -184620969
+      casual_Male_K_01: 2016136021
+      casual_Male_K_02: 928119981
+      casual_Male_K_03: 1355697966
+      casual_Male_K_04: 1069268145
+      casual_Male_K_05: 277729881
+      casual_Male_K_06: -1923627295
+      casual_Male_K_07: -1704153388
+      casual_Male_K_08: -2082851708
+      casual_Male_K_09: -1871188841
+      casual_Male_K_10: 1374375015
+      casual_Male_K_11: -1363781494
+      casual_Male_K_12: 1469442511
+      casual_Male_K_13: 1977375563
+      casual_Male_K_14: 459287305
+      casual_Male_K_15: -639772026
+      casual_Male_K_16: -1691982901
+      casual_Male_K_17: -1661067378
+      casual_Male_K_18: -1843002136
+      casual_Male_K_19: -672967721
+      casual_Male_K_20: -729126932
+      casual_Male_K_21: -2091035530
+      casual_Male_K_22: 1322418839
+      casual_Male_K_23: -1300505879
+      casual_Male_K_24: -1293360026
+      casual_Male_K_25: 2134813571
+      casual_Male_K_26: -1957004728
+      casual_Male_K_27: 706624105
+      casual_Male_K_28: 414739734
+      casual_Male_K_29: 1118267552
+      casual_Male_K_30: 964514713
+      casual_Male_K_31: -1229938242
+      casual_Male_K_32: 1251397813
+      casual_Male_K_33: -2010780488
+      casual_Male_K_34: -1155408364
+      casual_Male_K_35: -1454043846
+      casual_Male_K_36: -1592695537
+      casual_Male_K_37: -1954804848
+      casual_Male_K_38: 1451672581
+      casual_Male_K_39: 2091270965
+      casual_Male_K_40: -286514748
+      casual_Male_K_41: 229627553
+      casual_Male_K_42: 113995409
+      casual_Male_K_43: 619984575
+      casual_Male_K_44: -1460518148
+      casual_Male_K_45: -204445199
+      casual_Male_K_46: 554098219
+      casual_Male_K_47: 1631115993
+      casual_Male_K_48: 1319253171
+      casual_Male_K_49: -1148279562
+      casual_Male_K_50: 1428737105
+      casual_Male_K_51: 806303970
+      casual_Male_K_52: -1273471687
+      casual_Male_K_53: -1039910105
+      casual_Male_K_54: 1293614684
+      casual_Male_K_55: 1962001437
+      casual_Male_K_56: 90328703
+      casual_Male_K_57: -1939596719
+      casual_Male_K_58: -521973768
+      casual_Male_K_59: 1671416328
+      casual_Male_K_60: -1561994392
+      casual_Male_K_61: 457943919
+      casual_Male_K_62: -1104399148
+      casual_Male_K_63: -709444725
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

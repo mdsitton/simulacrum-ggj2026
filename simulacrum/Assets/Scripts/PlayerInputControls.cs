@@ -294,6 +294,7 @@ public class PlayerInputControls : MonoBehaviour
         {
             // New target in range
             if (currentTarget != null)
+
             {
                 // Clear previous target
                 currentTarget.SetInteractionMode(InteractionMode.None);
@@ -312,6 +313,11 @@ public class PlayerInputControls : MonoBehaviour
             }   else {
                 Interact();
             }
+        }
+
+        if (actions.Player.Jump.WasPressedThisFrame())
+        {
+            CurrentPlayerAnimator.SetState(CharacterState.Die);
         }
     }
 

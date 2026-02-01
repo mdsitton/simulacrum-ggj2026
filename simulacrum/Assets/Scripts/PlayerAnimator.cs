@@ -64,6 +64,12 @@ public class PlayerAnimator : MonoBehaviour, Interactable
     {
         if (state == newState) return;
 
+        // Reset death flag when leaving Die state
+        if (state == CharacterState.Die && newState != CharacterState.Die)
+        {
+            isDead = false;
+        }
+
         state = newState;
         stateResetNeeded = true;
         UpdateSprite();
@@ -78,6 +84,11 @@ public class PlayerAnimator : MonoBehaviour, Interactable
         {
             // Unfreeze position for movement, keep rotation frozen
             playerBody.constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
+        else if (state == CharacterState.Die)
+        {
+            playerBody.linearVelocity = Vector2.zero;
+            playerBody.constraints = RigidbodyConstraints2D.FreezeAll;
         }
     }
 
@@ -139,13 +150,31 @@ public class PlayerAnimator : MonoBehaviour, Interactable
         spriteRenderer.sprite = sprite;
     }
 
+    private bool isDead = false;
+
     private void Update()
     {
         animationTimer += Time.deltaTime;
         if (animationTimer >= frameTime)
         {
             animationTimer = 0f;
-            frameIndex = (frameIndex + 1) % frameCount;
+            // Death animation plays once and stays on last frame
+            if (state == CharacterState.Die)
+            {
+                if (!isDead && frameIndex < frameCount - 1)
+                {
+                    frameIndex++;
+                }
+                else
+                {
+                    isDead = true;
+                    frameIndex = frameCount - 1; // Stay on last frame
+                }
+            }
+            else
+            {
+                frameIndex = (frameIndex + 1) % frameCount;
+            }
         }
         UpdateSprite();
     }

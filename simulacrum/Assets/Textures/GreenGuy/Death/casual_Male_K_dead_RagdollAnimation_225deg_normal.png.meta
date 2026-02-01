@@ -1,0 +1,149 @@
+fileFormatVersion: 2
+guid: f97940a443d11fb40a95cea31b20a114
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 1
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 1
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: adc2380433a5fcd44a1188b483a13d28
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      casual_Male_K_dead_00: 1359144028
+      casual_Male_K_dead_01: 1406679851
+      casual_Male_K_dead_02: -237856296
+      casual_Male_K_dead_03: -1935620538
+      casual_Male_K_dead_04: -790687833
+      casual_Male_K_dead_05: 332826652
+      casual_Male_K_dead_06: -291164329
+      casual_Male_K_dead_07: 199655543
+      casual_Male_K_dead_08: 2024168417
+      casual_Male_K_dead_09: 1375700131
+      casual_Male_K_dead_10: 336500508
+      casual_Male_K_dead_11: 1635192614
+      casual_Male_K_dead_12: -1870364345
+      casual_Male_K_dead_13: -1311916847
+      casual_Male_K_dead_14: -990771445
+      casual_Male_K_dead_15: -596619115
+      casual_Male_K_dead_16: -1575262104
+      casual_Male_K_dead_17: 1659423776
+      casual_Male_K_dead_18: 276587002
+      casual_Male_K_dead_19: -1811701183
+      casual_Male_K_dead_20: 337800812
+      casual_Male_K_dead_21: 1016182498
+      casual_Male_K_dead_22: 332684547
+      casual_Male_K_dead_23: 1978633432
+      casual_Male_K_dead_24: 501577256
+      casual_Male_K_dead_25: 431178302
+      casual_Male_K_dead_26: -378227760
+      casual_Male_K_dead_27: -812285889
+      casual_Male_K_dead_28: -1938861441
+      casual_Male_K_dead_29: 425970911
+      casual_Male_K_dead_30: 209447556
+      casual_Male_K_dead_31: 138682936
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
