@@ -161,6 +161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   Access: {fileID: 1137623531208145678}
   NoAccess: {fileID: 5652462119933366990}
+  DoorColor: 0
 --- !u!1 &3706986711955242719
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,10 +20,19 @@ public enum CharacterDirection
     Angle360   // North (same as 0 degrees)
 }
 
+public enum CharacterColor
+{
+    Blue,
+    Green,
+    Purple,
+    None,
+}
+
 public class PlayerAnimator : MonoBehaviour, Interactable
 {
     [SerializeField]
     private PlayerSpriteSet spriteSet;
+    public CharacterColor CharacterColor = CharacterColor.None;
     private CharacterState state;
     private CharacterDirection direction;
 
@@ -187,13 +196,13 @@ public class PlayerAnimator : MonoBehaviour, Interactable
 
     public InteractionMode CanInteract(PlayerInputControls player)
     {
-        if (player.CurrentPlayerAnimator != this)
-        {            
-          return InteractionMode.CanInteract;            
-        } else
-        {
+        // if (player.CurrentPlayerAnimator != this)
+        // {            
+        //   return InteractionMode.CanInteract;            
+        // } else
+        // {
             return InteractionMode.None;
-        }
+        // }
     } 
 
     public void SetInteractionMode(InteractionMode mode)

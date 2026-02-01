@@ -140,6 +140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimator
   spriteSet: {fileID: 11400000, guid: 7234ed1a3bcd9ff45a9fe94711f8cfb3, type: 2}
+  CharacterColor: 1
 --- !u!58 &7144816264932223187
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -268,11 +268,11 @@ public class PlayerInputControls : MonoBehaviour
         {            
             Vector3 desiredPosition = CurrentPlayerAnimator.GetLocation().position + cameraOffset;
             desiredPosition.z = mainCamera.transform.position.z;
-            UnityEngine.Debug.Log("Desired Position " + desiredPosition);
+            //UnityEngine.Debug.Log("Desired Position " + desiredPosition);
             var lerp = Vector3.SmoothDamp(mainCamera.transform.position, desiredPosition, ref cameraVelocity, cameraFollowTime);
-            UnityEngine.Debug.Log("Lerp " + lerp);
+            // UnityEngine.Debug.Log("Lerp " + lerp);
             mainCamera.transform.position  = lerp;
-            UnityEngine.Debug.Log("Camera Position " + mainCamera.transform.position);
+            // UnityEngine.Debug.Log("Camera Position " + mainCamera.transform.position);
 
         }
 
@@ -308,8 +308,8 @@ public class PlayerInputControls : MonoBehaviour
 
         if (actions.Player.Interact.WasPressedThisFrame())
         {
-            if(currentTarget != null) {
-                currentTarget.Interact();
+            if(currentTarget != null && currentTarget.CanInteract(this) == InteractionMode.CanInteract) {
+                currentTarget.Interact();                
             }   else {
                 Interact();
             }
@@ -328,7 +328,7 @@ public class PlayerInputControls : MonoBehaviour
         foreach (Collider2D other in hitColliders)
         {
             Interactable target = other.GetComponent<Interactable>();
-            UnityEngine.Debug.Log("target: " + target);
+            //UnityEngine.Debug.Log("target: " + target);
             if (target != null && target.CanInteract(this) != InteractionMode.None)
             {
                 return target;
@@ -339,14 +339,15 @@ public class PlayerInputControls : MonoBehaviour
 
     void Interact(){
 
-        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(CurrentPlayerAnimator.GetLocation().position, (float)3);
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(CurrentPlayerAnimator.GetLocation().position, 1f);
+        UnityEngine.Debug.Log("Player test hit Colliders: " + hitColliders.Length);
         foreach (Collider2D other in hitColliders)
         {
             PlayerAnimator target = other.GetComponent<PlayerAnimator>();
             if (target != null && target != CurrentPlayerAnimator)
             {
                 UnityEngine.Debug.Log("Switch");
-                CurrentPlayerAnimator.SetState(CharacterState.Standing);
+                CurrentPlayerAnimator.SetState(CharacterState.Die);
 
                 Transfer.transform.position = CurrentPlayerAnimator.GetTransferTarget().position;
                 //TransferTarget posiition updated in update loop

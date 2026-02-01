@@ -4,6 +4,8 @@ public class Door : MonoBehaviour, Interactable
 {
     public SpriteRenderer Access;
     public SpriteRenderer NoAccess;
+
+    public CharacterColor DoorColor = CharacterColor.None;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {        
@@ -24,7 +26,12 @@ public class Door : MonoBehaviour, Interactable
 
     public InteractionMode CanInteract(PlayerInputControls player)
     {
-        return InteractionMode.CanInteract;
+        if (DoorColor == CharacterColor.None || DoorColor == player.CurrentPlayerAnimator.CharacterColor){
+            return InteractionMode.CanInteract;            
+        } else
+        {
+            return InteractionMode.CannontInteract;
+        }
     } 
 
     public void SetInteractionMode(InteractionMode mode)
