@@ -6,7 +6,7 @@ class MainMenu : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("test-scene");
+        SceneManager.LoadScene("test-transfer-scene");
     }
 
     public void QuitGame()
