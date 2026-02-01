@@ -44,6 +44,11 @@ public class PlayerAnimator : MonoBehaviour
         return playerBody.transform;
     }
 
+    public Transform GetTransferTarget()
+    {
+        return transform.Find("TransferTarget");
+    }
+
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();

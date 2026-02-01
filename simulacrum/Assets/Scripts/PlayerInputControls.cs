@@ -1,11 +1,16 @@
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
+using UnityEngine.VFX;
 using static InputSystem_Actions;
 
 public class PlayerInputControls : MonoBehaviour
 {
     public PlayerAnimator CurrentPlayerAnimator;
+    public VisualEffect Transfer;
+
+    public GameObject TransferTarget;
 
     public Vector2 Look { get; private set; }
 
@@ -106,18 +111,43 @@ public class PlayerInputControls : MonoBehaviour
         // Apply velocity every frame, separate from facing direction
         CurrentPlayerAnimator.SetVelocity(Move);
 
-        if (actions.Player.Interact.ReadValue<float>() > 0)
+        if (actions.Player.Interact.WasPressedThisFrame())
         {
-            Collider2D[] hitColliders = Physics2D.OverlapCircleAll(CurrentPlayerAnimator.GetLocation().position, (float)0.5);
+           Interact();
+        }
+    }
 
-            foreach (Collider2D other in hitColliders)
+    void Interact()
+    {
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(CurrentPlayerAnimator.GetLocation().position, (float)0.5);
+        foreach (Collider2D other in hitColliders)
+        {                
+            Door door = other.GetComponent<Door>();
+            if (door != null)
             {
-                Door door = other.GetComponent<Door>();
-                if (door != null)
-                {
-                    door.Open();
-                }
-            }
+                door.Open();
+                return;
+            }                
+        }
+
+        hitColliders = Physics2D.OverlapCircleAll(CurrentPlayerAnimator.GetLocation().position, (float)3);        
+        foreach (Collider2D other in hitColliders)
+        {
+            PlayerAnimator target = other.GetComponent<PlayerAnimator>();
+            if (target != null && target != CurrentPlayerAnimator)
+            {
+                UnityEngine.Debug.Log("Switch");
+                CurrentPlayerAnimator.SetState(CharacterState.Standing);  
+                
+                Transfer.transform.position = CurrentPlayerAnimator.GetTransferTarget().position;
+                TransferTarget.transform.position = target.GetTransferTarget().position;
+
+                Transfer.Play();
+
+                CurrentPlayerAnimator = target;
+                Move = Vector2.zero;
+                return;
+            }              
         }
     }
 }
