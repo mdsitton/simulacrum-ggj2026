@@ -80,7 +80,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 806f565606b3ba54eb3dc30d9594428c, type: 3}
   m_Color: {r: 1, g: 0, b: 0.9489031, a: 1}
@@ -354,6 +354,7 @@ MonoBehaviour:
   mouseVelocityThreshold: 500
   destinationThreshold: 0.5
   mouseVelocitySmoothing: 0.1
+  winscreen: {fileID: 0}
 --- !u!1 &6462967555910449488
 GameObject:
   m_ObjectHideFlags: 0

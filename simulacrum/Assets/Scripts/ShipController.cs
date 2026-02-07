@@ -5,7 +5,7 @@ public class ShipController : MonoBehaviour
 
     public bool takeOff = false;
 
-    public float wait = 2f;
+    public float wait = 1f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

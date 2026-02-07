@@ -197,9 +197,29 @@ public class PlayerInputControls : MonoBehaviour, ICharacterController
 
     private void Update()
     {
+        // Update Camera first so it follows the ship after winning
+        if (mainCamera != null && CurrentPlayerAnimator != null)
+        {
+            Vector3 desiredPosition = CurrentPlayerAnimator.GetLocation().position + cameraOffset;
+            desiredPosition.z = mainCamera.transform.position.z;
+            //UnityEngine.Debug.Log("Desired Position " + desiredPosition);
+            var lerp = Vector3.SmoothDamp(mainCamera.transform.position, desiredPosition, ref cameraVelocity, cameraFollowTime);
+            // UnityEngine.Debug.Log("Lerp " + lerp);
+            mainCamera.transform.position = lerp;
+            // UnityEngine.Debug.Log("Camera Position " + mainCamera.transform.position);
+
+        }
+
         if (isGameFinished && finishTimer > 0.0f)
         {
             finishTimer -= Time.deltaTime;
+            
+            // Leave time for transfer effect and ship take off
+            if (finishTimer <= 11f && !winscreen.activeSelf)
+            {
+                winscreen.SetActive(true);
+                winscreen.GetComponent<Animator>().Play("fade_in");
+            }
             if (finishTimer <= 0.0f)
             {
                 SceneManager.LoadScene("MainMenu");
@@ -328,19 +348,7 @@ public class PlayerInputControls : MonoBehaviour, ICharacterController
                 // Clear mouse destination when stopping
                 mouseClickDestination = null;
             }
-        }
-
-        if (mainCamera != null)
-        {
-            Vector3 desiredPosition = CurrentPlayerAnimator.GetLocation().position + cameraOffset;
-            desiredPosition.z = mainCamera.transform.position.z;
-            //UnityEngine.Debug.Log("Desired Position " + desiredPosition);
-            var lerp = Vector3.SmoothDamp(mainCamera.transform.position, desiredPosition, ref cameraVelocity, cameraFollowTime);
-            // UnityEngine.Debug.Log("Lerp " + lerp);
-            mainCamera.transform.position = lerp;
-            // UnityEngine.Debug.Log("Camera Position " + mainCamera.transform.position);
-
-        }
+        }        
 
         TransferTarget.transform.position = CurrentPlayerAnimator.GetTransferTarget().position;
 
@@ -474,7 +482,8 @@ public class PlayerInputControls : MonoBehaviour, ICharacterController
             CurrentPlayerAnimator.SetState(CharacterState.Die);
 
             Transfer.transform.position = CurrentPlayerAnimator.GetTransferTarget().position;
-            //TransferTarget position updated in update loop
+            //TransferTarget position also updated in update loop
+            TransferTarget.transform.position = target.GetTransferTarget().position;
 
             Transfer.Play();
             TransferSound.Play();
@@ -488,7 +497,6 @@ public class PlayerInputControls : MonoBehaviour, ICharacterController
             if (target.GetComponent<ShipController>() != null)
             {
                 target.GetComponent<ShipController>().takeOff = true;
-                winscreen.SetActive(true);
                 finishTimer = 15.0f;
                 isGameFinished = true;
 
