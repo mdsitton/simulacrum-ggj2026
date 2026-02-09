@@ -56,6 +56,7 @@ public class PlayerInputControls : MonoBehaviour, ICharacterController
 
     public GameObject TransferTarget;
     public AudioSource TransferSound;
+    public AudioSource DoorSound;
 
     public Vector2 Look { get; private set; }
 
@@ -389,6 +390,7 @@ public class PlayerInputControls : MonoBehaviour, ICharacterController
             if (currentTarget != null && currentTarget.CanInteract(this) == InteractionMode.CanInteract)
             {
                 currentTarget.Interact();
+                DoorSound.Play();
             }
             else
             {
