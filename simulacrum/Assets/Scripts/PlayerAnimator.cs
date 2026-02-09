@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.VFX;
 
 public enum CharacterState
 {
@@ -33,6 +34,7 @@ public class PlayerAnimator : MonoBehaviour
     [SerializeField]
     private PlayerSpriteSet spriteSet;
     public CharacterColor CharacterColor = CharacterColor.None;
+    public VisualEffect possesedEffect;
     private CharacterState state;
     private CharacterDirection direction;
 
@@ -100,7 +102,11 @@ public class PlayerAnimator : MonoBehaviour
         // Reset death flag when leaving Die state
         if (state == CharacterState.Die && newState != CharacterState.Die)
         {
-            isDead = false;
+            if (possesedEffect != null)
+            {
+                possesedEffect.enabled = true;
+                possesedEffect.Play();
+            }
         }
 
         state = newState;
@@ -122,6 +128,11 @@ public class PlayerAnimator : MonoBehaviour
         {
             playerBody.linearVelocity = Vector2.zero;
             playerBody.constraints = RigidbodyConstraints2D.FreezeAll;
+            if (possesedEffect != null)
+            {
+                possesedEffect.Reinit();
+                possesedEffect.enabled = false;
+            }
         }
     }
 
@@ -190,8 +201,6 @@ public class PlayerAnimator : MonoBehaviour
         }
     }
 
-    private bool isDead = false;
-
     private void Update()
     {
         animationTimer += Time.deltaTime;
@@ -203,13 +212,12 @@ public class PlayerAnimator : MonoBehaviour
             if (frameCount == 0) return; // No frames to animate
             if (state == CharacterState.Die)
             {
-                if (!isDead && frameIndex < frameCount - 1)
+                if (frameIndex < frameCount - 1)
                 {
                     frameIndex++;
                 }
                 else
                 {
-                    isDead = true;
                     frameIndex = frameCount - 1; // Stay on last frame
                 }
             }
@@ -223,7 +231,7 @@ public class PlayerAnimator : MonoBehaviour
 
     public bool IsAlive()
     {
-        return !isDead;
+        return state != CharacterState.Die;
     }
 
 }
