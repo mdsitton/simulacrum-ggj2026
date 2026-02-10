@@ -156,6 +156,7 @@ GameObject:
   - component: {fileID: 3635507710980510849}
   - component: {fileID: 6083121196793137913}
   - component: {fileID: 74273668928735487}
+  - component: {fileID: 4181264075218670681}
   m_Layer: 0
   m_Name: character_entity
   m_TagString: Untagged
@@ -263,3 +264,25 @@ VFXRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
+--- !u!95 &4181264075218670681
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8151456610384280719}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cdea54f579a86b24c9432b26699941c9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
