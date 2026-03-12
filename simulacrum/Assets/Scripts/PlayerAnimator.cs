@@ -132,6 +132,8 @@ public class PlayerAnimator : MonoBehaviour
             {
                 possesedEffect.Reinit();
                 possesedEffect.enabled = false;
+                // Work around disembodied player blocking movement without a visible dead body
+                gameObject.SetActive(false);
             }
         }
     }
