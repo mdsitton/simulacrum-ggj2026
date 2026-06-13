@@ -127,6 +127,11 @@ public class PlayerInputControls : MonoBehaviour, ICharacterController
         }
     }
 
+    public void OnDestroy()
+    {
+        actions.Player.Disable();
+    }
+
     /// <summary>
     /// Calculates the CharacterDirection from a direction vector using 8-way directional angles.
     /// Uses standard mathematical angles where:
